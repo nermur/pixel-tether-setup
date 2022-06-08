@@ -1,0 +1,43 @@
+:experimental:
+ifdef::env-github[]
+:icons:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:imagesdir: imgs/
+
+=== 1. Installing the OS
+. link:https://protonaosp.org/install/manual[Use ProtonAOSP's Manual install].
+** Do not install the gapps (Google apps) version, you can optionally do this later with a better method.
+** Do not re-lock the bootloader.
+. Boot back into the bootloader after installing ProtonAOSP, then follow link:https://protonaosp.org/root[ProtonAOSP's rooting instructions].
+
+___
+
+=== Optional: Installing gapps
+. Install the APK link:https://apps.grapheneos.org/packages/app.grapheneos.apps/[located here].
+. Open that installed APK, it should be called "Apps".
+. Install what you need through it:
+
+image:grapheneos_apps.png[width=360]
+
+___
+
+=== 2. Install the custom kernel
+. Obtain Franco Kernel Manager through either from Google Play (recommended), or from link:https://apk4all.com/dl/?app_id=com.franco.kernel[apk4all].
+. Open the "FKM" app -> Hamburger menu (three lines icon; located at the bottom-right) -> Flasher
+. Import a kernel download configuration -> `pick from the list below or your own`
+
+[cols="1,1"]
+|===
+| Device | Recommended kernel download configuration
+| Pixel 5 | https://raw.githubusercontent.com/fsociety-tribute/redbull/a12-rebase/fkm/redfin/fkm.json
+| Pixel 4a (5G) | https://raw.githubusercontent.com/fsociety-tribute/redbull/a12-rebase/fkm/bramble/fkm.json
+| Pixel 4a | https://raw.githubusercontent.com/fsociety-tribute/sunfish/a12/fkm/fkm.json
+|===
+
+=== 3. Follow the no tethering restrictions guide
+https://github.com/nermur/no-tethering-restrictions
